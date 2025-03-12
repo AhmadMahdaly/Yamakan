@@ -1,0 +1,105 @@
+name: yamakan
+description: "Egypt places project."
+version: 2.0.9+29
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  shared_preferences: ^2.3.4 
+  provider: ^6.1.2
+  url_launcher: ^6.3.0
+  flutter_svg: ^2.0.10+1
+  cached_network_image: ^3.4.1
+  flutter_spinkit: ^5.2.1
+  easy_localization: ^3.0.7
+  flutter_screenutil: ^5.9.3
+  very_good_analysis: ^7.0.0
+  carousel_slider: ^5.0.0
+  animate_do: ^3.3.4
+  flutter_native_splash: ^2.4.3
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.2
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon.png"
+
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/home_page/
+    - assets/images/home_page/bottom_nav_bar/
+    - assets/images/home_page/events/
+    - assets/images/items/
+    - assets/images/items/attractions/
+    - assets/images/items/category/
+    - assets/images/items/category/activities/
+    - assets/images/items/category/cultural/
+    - assets/images/items/category/historical/
+    - assets/images/items/category/parks/
+    - assets/images/items/cities/
+    - assets/images/onboarding/
+    - assets/images/logo.svg
+    - assets/images/Maps.png
+    - assets/images/wishList.png
+    - assets/images/profile/
+    - assets/images/items/category/other/
+    - assets/images/items/cities/alex/
+    - assets/images/items/cities/porsaid/
+    - assets/images/items/cities/fayoum/
+    - assets/images/searchPage.png
+    - assets/images/items/cities/aswan/
+    - assets/images/icon.png
+    - assets/images/home_page/category_bar/
+    - assets/images/items/category/religion/
+    - assets/translations/
+    - assets/icons/categories/
+    - assets/svg/
+    - assets/images/core/categories/muse/
+    - assets/images/core/categories/religious/
+    - shorebird.yaml
+
+  fonts:
+    - family: jura
+      fonts:
+        - asset: assets/fonts/jura/Jura-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/jura/Jura-Regular.ttf
+          weight: 400
+
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppins/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/poppins/Poppins-Regular.ttf
+          weight: 400
+
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/cairo/Cairo-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/cairo/Cairo-Regular.ttf
+          weight: 400
+
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/tajawal/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/tajawal/Tajawal-Regular.ttf
+          weight: 400
+flutter_intl:
+  enabled: true
+
+

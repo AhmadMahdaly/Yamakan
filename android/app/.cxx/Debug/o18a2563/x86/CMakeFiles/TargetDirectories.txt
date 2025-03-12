@@ -1,0 +1,2 @@
+D:/FLUTTER PROJECTS/YaMakan_app/android/app/.cxx/Debug/o18a2563/x86/CMakeFiles/edit_cache.dir
+D:/FLUTTER PROJECTS/YaMakan_app/android/app/.cxx/Debug/o18a2563/x86/CMakeFiles/rebuild_cache.dir
