@@ -53,13 +53,16 @@ Before running the app, make sure you have the following:
 - `animate_do`  
 
 ## 📸 Screenshots  
-![Screenshot](https://play-lh.googleusercontent.com/1TJ71LXYCHvpTzj0Mv_CMKGr0xov9kQCQcB3Q_sXAzbcmDDlWZPOlanHo_xFhe6sjA=w2560-h1440-rw)  
-![Screenshot](https://play-lh.googleusercontent.com/6GelbVdg3tEW4sje4B1C-3mq-_1bgnwehYFtWj11KJ_vIaf9ETTrXGLZOxRXboqONj0=w2560-h1440-rw)  
-![Screenshot](https://play-lh.googleusercontent.com/M62pv6ECtnz3prncxjrZZ8ygu6hd3cL659JkcafNzqyrSFNuBd89LUlwSS0IRfG_56w=w2560-h1440-rw)  
-![Screenshot](https://play-lh.googleusercontent.com/TzCEbVhv2zXmVrOkQMelUB31ToaJe_scsF6MJ6v6jKw43Feji0cBBRtJ1tjgl03roHE=w2560-h1440-rw)  
-![Screenshot](https://play-lh.googleusercontent.com/RhO8SDSbnanpm4ACo5GTZoeNIfuViwwam_Ra2JwfUmV9BvjHk_OX6bBTXp38msOa=w2560-h1440-rw)  
-![Screenshot](https://play-lh.googleusercontent.com/gkWArtG-xJYVtJ9JwejRML_C-4oSFwGTt9YcisnxK1juUzDnvLQLvW3y-q5a5B0clOg=w2560-h1440-rw)  
-![Screenshot](https://play-lh.googleusercontent.com/ft1A3BOw-Ya6-keFue5o_-CBCp5ivooFGqjX4z2R6IvgZGeZ2g7EeZuZnREeHEhpVaR7=w2560-h1440-rw)
+<p align="center">
+  <img src="https://play-lh.googleusercontent.com/1TJ71LXYCHvpTzj0Mv_CMKGr0xov9kQCQcB3Q_sXAzbcmDDlWZPOlanHo_xFhe6sjA=w2560-h1440-rw" width="30%" />
+  <img src="https://play-lh.googleusercontent.com/6GelbVdg3tEW4sje4B1C-3mq-_1bgnwehYFtWj11KJ_vIaf9ETTrXGLZOxRXboqONj0=w2560-h1440-rw" width="30%" />
+  <img src="https://play-lh.googleusercontent.com/M62pv6ECtnz3prncxjrZZ8ygu6hd3cL659JkcafNzqyrSFNuBd89LUlwSS0IRfG_56w=w2560-h1440-rw" width="30%" />
+</p>
+<p align="center">
+  <img src="https://play-lh.googleusercontent.com/TzCEbVhv2zXmVrOkQMelUB31ToaJe_scsF6MJ6v6jKw43Feji0cBBRtJ1tjgl03roHE=w2560-h1440-rw" width="30%" />
+  <img src="https://play-lh.googleusercontent.com/RhO8SDSbnanpm4ACo5GTZoeNIfuViwwam_Ra2JwfUmV9BvjHk_OX6bBTXp38msOa=w2560-h1440-rw" width="30%" />
+  <img src="https://play-lh.googleusercontent.com/gkWArtG-xJYVtJ9JwejRML_C-4oSFwGTt9YcisnxK1juUzDnvLQLvW3y-q5a5B0clOg=w2560-h1440-rw" width="30%" />
+</p>
 
 ---  
 
