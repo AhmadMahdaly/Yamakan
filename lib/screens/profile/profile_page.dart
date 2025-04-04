@@ -8,8 +8,6 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final selectedLocale = Localizations.localeOf(context).toString();
-
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
@@ -20,7 +18,7 @@ class ProfilePage extends StatelessWidget {
           right: 16.sp,
         ),
         child: ListView(
-          children: [
+          children: const [
             /// first Card
             // CustomFadeInDown(
             //   duration: 400,
@@ -50,11 +48,8 @@ class ProfilePage extends StatelessWidget {
             //     ),
             //   ),
             // ),
-            const AboutButton(),
-
-            Language(
-              selectedLocale: selectedLocale,
-            ),
+            AboutButton(),
+            Language(),
             // const SignScreenButton(),
           ],
         ),

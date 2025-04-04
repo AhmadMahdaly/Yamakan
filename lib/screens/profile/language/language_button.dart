@@ -6,11 +6,8 @@ import 'package:yamakan/animation/animation_do.dart';
 import 'package:yamakan/screens/profile/language/change_language_function.dart';
 
 class Language extends StatelessWidget {
-  const Language({
-    required this.selectedLocale,
-    super.key,
-  });
-  final String selectedLocale;
+  const Language({super.key});
+
   @override
   Widget build(BuildContext context) {
     return CustomFadeInDown(
@@ -39,48 +36,51 @@ class Language extends StatelessWidget {
             ],
           ),
           child: InkWell(
-      child: Padding(
-        padding: EdgeInsets.only(
-          left: 16.sp,
-          right: 16.sp,
-          top: 5.sp,
-          bottom: 5.sp,
-        ),
-        child: Row(
-          children: [
-            SvgPicture.asset(
-              'assets/images/profile/ion_language-outline.svg',
-              width: 20.sp,
-            ),
-            SizedBox(
-              width: 10.sp,
-            ),
-            Text(
-              'ChangeLanguage'.tr(),
-              style: TextStyle(
-                color: const Color(0xFF89898A),
-                fontSize: 14.sp,
-                fontWeight: FontWeight.w500,
+            child: Padding(
+              padding: EdgeInsets.only(
+                left: 16.sp,
+                right: 16.sp,
+                top: 5.sp,
+                bottom: 5.sp,
+              ),
+              child: Row(
+                children: [
+                  SvgPicture.asset(
+                    'assets/images/profile/ion_language-outline.svg',
+                    width: 20.sp,
+                  ),
+                  SizedBox(
+                    width: 10.sp,
+                  ),
+                  Text(
+                    'ChangeLanguage'.tr(),
+                    style: TextStyle(
+                      color: const Color(0xFF89898A),
+                      fontSize: 14.sp,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  const Spacer(),
+                  LanguageDropDownButton(),
+                ],
               ),
             ),
-            const Spacer(),
-            LanguageDropDownButton(selectedLocale: selectedLocale),
-          ],
+            // onTap: () => showModalBottomSheet(
+            //   constraints: BoxConstraints.loose(
+            //     Size.fromHeight(
+            //       175.sp,
+            //     ),
+            //   ),
+            //   sheetAnimationStyle: AnimationStyle(
+            //     curve: Curves.easeIn,
+            //     duration: const Duration(milliseconds: 500),
+            //   ),
+            //   context: context,
+            //   builder: (context) => const ChangeLanguage(),
+            // ),
+          ),
         ),
       ),
-      // onTap: () => showModalBottomSheet(
-      //   constraints: BoxConstraints.loose(
-      //     Size.fromHeight(
-      //       175.sp,
-      //     ),
-      //   ),
-      //   sheetAnimationStyle: AnimationStyle(
-      //     curve: Curves.easeIn,
-      //     duration: const Duration(milliseconds: 500),
-      //   ),
-      //   context: context,
-      //   builder: (context) => const ChangeLanguage(),
-      // ),
-        ),),),);
+    );
   }
 }

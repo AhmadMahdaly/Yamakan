@@ -1,4 +1,3 @@
-
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -7,14 +6,11 @@ import 'package:yamakan/models/locale_model.dart';
 import 'package:yamakan/widgets/navigation_bar_app.dart';
 
 class LanguageDropDownButton extends StatelessWidget {
-  const LanguageDropDownButton({
-    required this.selectedLocale, super.key,
-  });
-
-  final String selectedLocale;
+  const LanguageDropDownButton({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final selectedLocale = Localizations.localeOf(context).toString();
     return Consumer<LocaleModel>(
       builder: (context, localeModel, child) => DropdownButton(
         dropdownColor: Colors.white,
