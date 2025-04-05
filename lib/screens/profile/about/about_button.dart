@@ -14,49 +14,36 @@ class AboutButton extends StatelessWidget {
       duration: 400,
       child: InkWell(
         borderRadius: BorderRadius.circular(10.sp),
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) {
-                return const AboutPage();
-              },
-            ),
-          );
-        },
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const AboutPage(),
+          ),
+        ),
         child: Container(
           height: 58.sp,
           decoration: ShapeDecoration(
             color: Colors.white,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(
-                15.sp,
-              ),
+              borderRadius: BorderRadius.circular(15.sp),
             ),
             shadows: const [
               BoxShadow(
                 color: Color(0x19000000),
                 blurRadius: 4,
-                offset: Offset(
-                  2,
-                  4,
-                ),
+                offset: Offset(2, 4),
               ),
             ],
           ),
           child: Padding(
-            padding: EdgeInsets.all(
-              16.sp,
-            ),
+            padding: EdgeInsets.all(16.sp),
             child: Row(
               children: [
                 SvgPicture.asset(
                   'assets/images/profile/Vector.svg',
                   width: 20.sp,
                 ),
-                SizedBox(
-                  width: 10.sp,
-                ),
+                SizedBox(width: 10.sp),
                 Text(
                   'AboutApp'.tr(),
                   textAlign: TextAlign.right,

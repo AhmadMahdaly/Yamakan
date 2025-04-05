@@ -62,9 +62,7 @@ class _SignScreenState extends State<SignScreen>
               ),
               unselectedLabelColor: const Color(0xffA9A9A9),
               automaticIndicatorColorAdjustment: false,
-              labelPadding: EdgeInsets.symmetric(
-                horizontal: 50.sp,
-              ),
+              labelPadding: EdgeInsets.symmetric(horizontal: 50.sp),
               labelStyle: TextStyle(
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w500,
@@ -94,9 +92,7 @@ class _SignScreenState extends State<SignScreen>
                       fontWeight: FontWeight.bold,
                       color: _currentIndex == 1
                           ? kMainColor
-                          : const Color(
-                              0xffA9A9A9,
-                            ),
+                          : const Color(0xffA9A9A9),
                     ),
                   ),
                 ),

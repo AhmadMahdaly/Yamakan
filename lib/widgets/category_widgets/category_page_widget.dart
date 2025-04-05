@@ -57,9 +57,7 @@ class _CategoryPageItemsState extends State<CategoryPageItems>
                       color: kMainColor,
                       size: 24.sp,
                     ), // تغيير لون الأيقونة هنا
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
+                    onPressed: () => Navigator.of(context).pop(),
                   ),
                   Text(
                     widget.title,
@@ -72,14 +70,10 @@ class _CategoryPageItemsState extends State<CategoryPageItems>
                 ],
               ),
               PreferredSize(
-                preferredSize: Size.fromHeight(
-                  50.sp,
-                ),
+                preferredSize: Size.fromHeight(50.sp),
                 child: Builder(
                   builder: (context) => Padding(
-                    padding: EdgeInsets.only(
-                      bottom: 4.sp,
-                    ),
+                    padding: EdgeInsets.only(bottom: 4.sp),
                     child: HomeSearchBar(
                       hint: '${'SearchBarTitle'.tr()} ',
                       // '${widget.title}',
@@ -96,13 +90,9 @@ class _CategoryPageItemsState extends State<CategoryPageItems>
             ),
             indicator: BoxDecoration(
               color: kMainColor,
-              borderRadius: BorderRadius.circular(
-                16.sp,
-              ),
+              borderRadius: BorderRadius.circular(16.sp),
             ),
-            unselectedLabelColor: const Color(
-              0xffA9A9A9,
-            ),
+            unselectedLabelColor: const Color(0xffA9A9A9),
             automaticIndicatorColorAdjustment: false,
             labelColor: Colors.white,
             indicatorColor: kMainColor,
@@ -116,67 +106,29 @@ class _CategoryPageItemsState extends State<CategoryPageItems>
             isScrollable: true,
             tabAlignment: TabAlignment.start,
             controller: _controller,
-            onTap: (index) {
-              setState(() {
-                _controller.index = index;
-              });
-            },
+            onTap: (index) => setState(() {
+              _controller.index = index;
+            }),
             physics: const BouncingScrollPhysics(),
             tabs: [
-              Tab(
-                child: Text(
-                  'Cairo'.tr(),
-                ),
-              ),
-              Tab(
-                child: Text(
-                  'Giza'.tr(),
-                ),
-              ),
-              Tab(
-                child: Text(
-                  'Alex'.tr(),
-                ),
-              ),
-              Tab(
-                child: Text(
-                  'Portsaid'.tr(),
-                ),
-              ),
-              Tab(
-                child: Text(
-                  'Fayoum'.tr(),
-                ),
-              ),
-              Tab(
-                child: Text(
-                  'Aswan'.tr(),
-                ),
-              ),
+              Tab(child: Text('Cairo'.tr())),
+              Tab(child: Text('Giza'.tr())),
+              Tab(child: Text('Alex'.tr())),
+              Tab(child: Text('Portsaid'.tr())),
+              Tab(child: Text('Fayoum'.tr())),
+              Tab(child: Text('Aswan'.tr())),
             ],
           ),
         ),
         body: TabBarView(
           controller: _controller,
           children: <Widget>[
-            GridPlacesWidget(
-              list: widget.categoryLists[0],
-            ),
-            GridPlacesWidget(
-              list: widget.categoryLists[1],
-            ),
-            GridPlacesWidget(
-              list: widget.categoryLists[2],
-            ),
-            GridPlacesWidget(
-              list: widget.categoryLists[3],
-            ),
-            GridPlacesWidget(
-              list: widget.categoryLists[4],
-            ),
-            GridPlacesWidget(
-              list: widget.categoryLists[5],
-            ),
+            GridPlacesWidget(list: widget.categoryLists[0]),
+            GridPlacesWidget(list: widget.categoryLists[1]),
+            GridPlacesWidget(list: widget.categoryLists[2]),
+            GridPlacesWidget(list: widget.categoryLists[3]),
+            GridPlacesWidget(list: widget.categoryLists[4]),
+            GridPlacesWidget(list: widget.categoryLists[5]),
           ],
         ),
       ),

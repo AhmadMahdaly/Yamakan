@@ -18,9 +18,7 @@ class AboutPage extends StatelessWidget {
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
-                      bottomRight: Radius.circular(
-                        45.sp,
-                      ),
+                      bottomRight: Radius.circular(45.sp),
                     ),
                     color: kMainColor,
                   ),
@@ -34,9 +32,7 @@ class AboutPage extends StatelessWidget {
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(
-                        45.sp,
-                      ),
+                      bottomLeft: Radius.circular(45.sp),
                     ),
                     color: kMainColor,
                   ),
@@ -48,9 +44,7 @@ class AboutPage extends StatelessWidget {
         ),
         toolbarHeight: 180.sp,
         leading: IconButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
+          onPressed: () => Navigator.of(context).pop(),
           icon: Icon(
             Icons.arrow_back_ios,
             size: 22.sp,
@@ -62,9 +56,7 @@ class AboutPage extends StatelessWidget {
         child: ListView(
           children: [
             Padding(
-              padding: EdgeInsets.all(
-                24.sp,
-              ),
+              padding: EdgeInsets.all(24.sp),
               child: Text(
                 'AboutMyApp'.tr(),
                 textAlign: TextAlign.justify,

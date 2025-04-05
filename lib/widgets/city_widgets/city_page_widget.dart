@@ -43,14 +43,10 @@ class CityPageWidget extends StatelessWidget {
                       height: 35.sp,
                       decoration: BoxDecoration(
                         color: Colors.black.withAlpha(25),
-                        borderRadius: BorderRadius.circular(
-                          8.sp,
-                        ),
+                        borderRadius: BorderRadius.circular(8.sp),
                       ),
                       child: IconButton(
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                        },
+                        onPressed: () => Navigator.of(context).pop(),
                         icon: Icon(
                           Icons.arrow_back_ios_new,
                           size: 22.sp,
@@ -140,11 +136,7 @@ class CityPageWidget extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (
-                            context,
-                          ) {
-                            return city.seeAll!;
-                          },
+                          builder: (context) => city.seeAll!,
                         ),
                       );
                     },

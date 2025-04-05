@@ -11,46 +11,26 @@ class AlexItemsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.symmetric(
-        horizontal: 8.sp,
-      ),
+      padding: EdgeInsets.symmetric(horizontal: 8.sp),
       scrollDirection: Axis.horizontal,
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: AlexPlaces().all[0],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: AlexPlaces().all[0]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: AlexPlaces().all[4],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: AlexPlaces().all[4]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: AlexPlaces().all[3],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: AlexPlaces().all[3]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: AlexPlaces().all[8],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: AlexPlaces().all[8]),
         ),
-        const NextArrow(
-          path: AlexGrid(),
-        ),
+        const NextArrow(path: AlexGrid()),
       ],
     );
   }

@@ -17,9 +17,7 @@ import 'package:yamakan/screens/cities/porsaid/porsaid_page.dart';
 import 'package:yamakan/widgets/city_widgets/city_item_card.dart';
 
 class CitiesItems extends StatelessWidget {
-  const CitiesItems({
-    super.key,
-  });
+  const CitiesItems({super.key});
 
   @override
   Widget build(BuildContext context) {

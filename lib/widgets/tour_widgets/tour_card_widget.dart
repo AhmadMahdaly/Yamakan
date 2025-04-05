@@ -5,29 +5,19 @@ import 'package:yamakan/constants/color_constants.dart';
 import 'package:yamakan/models/tour_card_model.dart';
 
 class TourCardWidget extends StatelessWidget {
-  const TourCardWidget({
-    required this.cards,
-    super.key,
-  });
+  const TourCardWidget({required this.cards, super.key});
 
   final TourCardModel cards;
 
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (
-              context,
-            ) =>
-                cards.tourPage!,
-          ),
-        );
-      },
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => cards.tourPage!,
+        ),
+      ),
       child: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: 16.sp,
@@ -37,18 +27,13 @@ class TourCardWidget extends StatelessWidget {
           decoration: ShapeDecoration(
             color: Colors.white,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(
-                8.sp,
-              ),
+              borderRadius: BorderRadius.circular(8.sp),
             ),
             shadows: const [
               BoxShadow(
                 color: Color(0x19000000),
                 blurRadius: 4,
-                offset: Offset(
-                  2,
-                  4,
-                ),
+                offset: Offset(2, 4),
               ),
             ],
           ),
@@ -58,9 +43,7 @@ class TourCardWidget extends StatelessWidget {
                 height: 115.sp,
                 width: 114.sp,
                 child: Padding(
-                  padding: EdgeInsets.all(
-                    8.sp,
-                  ),
+                  padding: EdgeInsets.all(8.sp),
                   child: Wrap(
                     /// 4 images
                     alignment: WrapAlignment.center,
@@ -70,9 +53,7 @@ class TourCardWidget extends StatelessWidget {
                     runSpacing: 8.sp,
                     children: [
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(
-                          8.sp,
-                        ),
+                        borderRadius: BorderRadius.circular(8.sp),
                         child: Image.asset(
                           cards.list4Image![0],
                           width: 44.sp,
@@ -81,9 +62,7 @@ class TourCardWidget extends StatelessWidget {
                         ),
                       ),
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(
-                          8.sp,
-                        ),
+                        borderRadius: BorderRadius.circular(8.sp),
                         child: Image.asset(
                           cards.list4Image![1],
                           width: 44.sp,
@@ -92,9 +71,7 @@ class TourCardWidget extends StatelessWidget {
                         ),
                       ),
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(
-                          8.sp,
-                        ),
+                        borderRadius: BorderRadius.circular(8.sp),
                         child: Image.asset(
                           cards.list4Image![2],
                           width: 44.sp,
@@ -103,9 +80,7 @@ class TourCardWidget extends StatelessWidget {
                         ),
                       ),
                       ClipRRect(
-                        borderRadius: BorderRadius.circular(
-                          8.sp,
-                        ),
+                        borderRadius: BorderRadius.circular(8.sp),
                         child: Image.asset(
                           cards.list4Image![3],
                           width: 44.sp,
@@ -117,9 +92,7 @@ class TourCardWidget extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
-                width: 6.sp,
-              ),
+              SizedBox(width: 6.sp),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -152,9 +125,7 @@ class TourCardWidget extends StatelessWidget {
                         Icons.access_time,
                         size: 13.sp,
                       ),
-                      SizedBox(
-                        width: 4.sp,
-                      ),
+                      SizedBox(width: 4.sp),
                       Text(
                         cards.time!,
                         style: TextStyle(
@@ -163,18 +134,14 @@ class TourCardWidget extends StatelessWidget {
                           fontWeight: FontWeight.w400,
                         ),
                       ),
-                      SizedBox(
-                        width: 16.sp,
-                      ),
+                      SizedBox(width: 16.sp),
 
                       /// fees
                       Icon(
                         Icons.money_outlined,
                         size: 13.sp,
                       ),
-                      SizedBox(
-                        width: 4.sp,
-                      ),
+                      SizedBox(width: 4.sp),
                       Text(
                         cards.fees!,
                         style: TextStyle(
@@ -188,9 +155,7 @@ class TourCardWidget extends StatelessWidget {
                   Row(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(
-                          top: 6.sp,
-                        ),
+                        padding: EdgeInsets.only(top: 6.sp),
                         child: Text(
                           'ExploreTitle'.tr(),
                           style: TextStyle(
@@ -200,13 +165,9 @@ class TourCardWidget extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
-                        width: 4.sp,
-                      ),
+                      SizedBox(width: 4.sp),
                       Padding(
-                        padding: EdgeInsets.only(
-                          top: 4.sp,
-                        ),
+                        padding: EdgeInsets.only(top: 4.sp),
                         child: RotatedBox(
                           quarterTurns: 2,
                           child: Icon(

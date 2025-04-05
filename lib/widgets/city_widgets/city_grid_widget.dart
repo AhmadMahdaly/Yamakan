@@ -6,10 +6,7 @@ import 'package:yamakan/widgets/category_widgets/no_added_yet_page.dart';
 import 'package:yamakan/widgets/place_page_widgets/place_item.dart';
 
 class GridCityWidget extends StatelessWidget {
-  const GridCityWidget({
-    required this.list,
-    super.key,
-  });
+  const GridCityWidget({required this.list, super.key});
 
   final List<ItemModel> list;
 

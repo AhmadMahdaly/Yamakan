@@ -11,68 +11,29 @@ class PointPath extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Circle(
-          num: 7.sp,
-        ),
-        Circle(
-          num: 7.sp,
-        ),
-        Circle(
-          num: 7.sp,
-        ),
-        Circle(
-          num: 7.sp,
-        ),
-
-        ///
-        Circle(
-          num: 7.sp,
-        ),
-        // Icon(
-        //   Icons.flag_circle,
-        //   size: 16.sp,
-        //   color: kMainColor,
-        // ),
-
-        Circle(
-          num: 7.sp,
-        ),
-        Circle(
-          num: 7.sp,
-        ),
-        Circle(
-          num: 7.sp,
-        ),
-        Circle(
-          num: 7.sp,
-        ),
-
-        Circle(
-          num: 7.sp,
-        ),
-
-        Circle(
-          num: 7.sp,
-        ),
-        Circle(
-          num: 7.sp,
-        ),
+        Circle(num: 7.sp),
+        Circle(num: 7.sp),
+        Circle(num: 7.sp),
+        Circle(num: 7.sp),
+        Circle(num: 7.sp),
+        Circle(num: 7.sp),
+        Circle(num: 7.sp),
+        Circle(num: 7.sp),
+        Circle(num: 7.sp),
+        Circle(num: 7.sp),
+        Circle(num: 7.sp),
+        Circle(num: 7.sp),
       ],
     );
   }
 }
 
 class Circle extends StatelessWidget {
-  const Circle({
-    required this.num,
-    super.key,
-  });
+  const Circle({required this.num, super.key});
   final double? num;
 
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return Icon(
       Icons.circle,
       size: num,
@@ -80,3 +41,7 @@ class Circle extends StatelessWidget {
     );
   }
 }
+        // Icon(
+        //   Icons.flag_circle,
+        //   size: 16.sp,
+        //   color: kMainColor)

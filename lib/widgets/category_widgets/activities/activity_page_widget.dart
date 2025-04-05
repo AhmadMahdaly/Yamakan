@@ -41,9 +41,7 @@ class _ActivitiesPageWidgetState extends State<ActivitiesPageWidget> {
         automaticallyImplyLeading: false,
         forceMaterialTransparency: true,
         leading: IconButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
+          onPressed: () => Navigator.of(context).pop(),
           icon: TopPageButton(
             icon: Icon(
               Icons.arrow_back_ios_new,
@@ -93,9 +91,7 @@ class _ActivitiesPageWidgetState extends State<ActivitiesPageWidget> {
           ),
           SliverToBoxAdapter(
             child: Padding(
-              padding: EdgeInsets.all(
-                16.sp,
-              ),
+              padding: EdgeInsets.all(16.sp),
               child: Text(
                 widget.page.name!,
                 style: TextStyle(
@@ -120,9 +116,7 @@ class _ActivitiesPageWidgetState extends State<ActivitiesPageWidget> {
                       size: 12.sp,
                       color: kShadowColor,
                     ),
-                    SizedBox(
-                      width: 5.sp,
-                    ),
+                    SizedBox(width: 5.sp),
                     Text(
                       widget.page.location!,
                       style: TextStyle(
@@ -150,9 +144,7 @@ class _ActivitiesPageWidgetState extends State<ActivitiesPageWidget> {
                 widget.page.overview!,
                 textAlign: TextAlign.justify,
                 style: TextStyle(
-                  color: const Color(
-                    0xFF878787,
-                  ),
+                  color: const Color(0xFF878787),
                   fontSize: 13.sp,
                   fontWeight: FontWeight.w400,
                 ),
@@ -173,9 +165,7 @@ class _ActivitiesPageWidgetState extends State<ActivitiesPageWidget> {
                 widget.page.fees!,
                 textAlign: TextAlign.justify,
                 style: TextStyle(
-                  color: const Color(
-                    0xFF878787,
-                  ),
+                  color: const Color(0xFF878787),
                   fontSize: 13.sp,
                   fontWeight: FontWeight.w400,
                 ),
@@ -183,9 +173,7 @@ class _ActivitiesPageWidgetState extends State<ActivitiesPageWidget> {
             ),
           ),
           SliverToBoxAdapter(
-            child: SizedBox(
-              height: 16.sp,
-            ),
+            child: SizedBox(height: 16.sp),
           ),
         ],
       ),

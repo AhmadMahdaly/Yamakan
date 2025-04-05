@@ -24,11 +24,7 @@ Future<bool?> showExitConfirmation(BuildContext context) async {
           ),
           actions: [
             ElevatedButton(
-              onPressed: () => Navigator.of(
-                context,
-              ).pop(
-                true,
-              ),
+              onPressed: () => Navigator.of(context).pop(true),
               child: Text(
                 'yes'.tr(),
                 style: TextStyle(
@@ -39,9 +35,7 @@ Future<bool?> showExitConfirmation(BuildContext context) async {
               ),
             ),
             ElevatedButton(
-              onPressed: () => Navigator.of(context).pop(
-                false,
-              ),
+              onPressed: () => Navigator.of(context).pop(false),
               child: Text(
                 'no'.tr(),
                 style: TextStyle(

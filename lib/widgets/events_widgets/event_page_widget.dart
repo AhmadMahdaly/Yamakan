@@ -9,10 +9,7 @@ import 'package:yamakan/constants/key_language.dart';
 import 'package:yamakan/models/event_page_model.dart';
 
 class EventsPagesWidget extends StatefulWidget {
-  const EventsPagesWidget({
-    required this.page,
-    super.key,
-  });
+  const EventsPagesWidget({required this.page, super.key});
 
   final EventPageModel page;
 
@@ -56,7 +53,6 @@ class _EventsPagesWidgetState extends State<EventsPagesWidget> {
               ),
             ),
             floating: true,
-            // automaticallyImplyLeading: false,
             expandedHeight: 300.sp,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(
@@ -215,9 +211,7 @@ class _EventsPagesWidgetState extends State<EventsPagesWidget> {
             ),
           ),
           SliverToBoxAdapter(
-            child: SizedBox(
-              height: 45.sp,
-            ),
+            child: SizedBox(height: 45.sp),
           ),
           SliverToBoxAdapter(
             child: SizedBox(
@@ -229,9 +223,7 @@ class _EventsPagesWidgetState extends State<EventsPagesWidget> {
       bottomNavigationBar: GestureDetector(
         onTap: _launchBookUrl,
         child: Padding(
-          padding: EdgeInsets.all(
-            16.sp,
-          ),
+          padding: EdgeInsets.all(16.sp),
           child: CustomButton(
             text: 'BookGuide'.tr(),
           ),

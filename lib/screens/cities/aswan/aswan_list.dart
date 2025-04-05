@@ -11,46 +11,26 @@ class AswanList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.symmetric(
-        horizontal: 8.sp,
-      ),
+      padding: EdgeInsets.symmetric(horizontal: 8.sp),
       scrollDirection: Axis.horizontal,
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: AswanPlaces().all[4],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: AswanPlaces().all[4]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: AswanPlaces().all[5],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: AswanPlaces().all[5]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: AswanPlaces().all[6],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: AswanPlaces().all[6]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: AswanPlaces().all[2],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: AswanPlaces().all[2]),
         ),
-        const NextArrow(
-          path: AswanGrid(),
-        ),
+        const NextArrow(path: AswanGrid()),
       ],
     );
   }

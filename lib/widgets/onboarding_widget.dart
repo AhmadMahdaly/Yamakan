@@ -16,9 +16,7 @@ class OnboardingWidget extends StatelessWidget {
       height: height,
       width: 103.sp,
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(
-          11.sp,
-        ),
+        borderRadius: BorderRadius.circular(11.sp),
         child: Image.asset(
           image,
           fit: BoxFit.cover,

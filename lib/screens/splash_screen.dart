@@ -20,10 +20,7 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
 
     // This is setting the time for disappeare //
-    Future.delayed(
-        const Duration(
-          seconds: 3,
-        ), () {
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -31,9 +28,7 @@ class _SplashScreenState extends State<SplashScreen>
         ),
       );
     });
-    SystemChrome.setEnabledSystemUIMode(
-      SystemUiMode.immersive,
-    );
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
   }
 
   @override
@@ -55,9 +50,7 @@ class _SplashScreenState extends State<SplashScreen>
                 width: 90.sp,
               ),
             ),
-            SizedBox(
-              height: 10.sp,
-            ),
+            SizedBox(height: 10.sp),
             Text(
               'YaMaKan',
               style: TextStyle(

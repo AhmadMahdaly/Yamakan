@@ -23,9 +23,7 @@ class NoAddedYet extends StatelessWidget {
                 ),
                 height: 70.sp,
               ),
-              SizedBox(
-                height: 20.sp,
-              ),
+              SizedBox(height: 20.sp),
               Text(
                 'NoAddedYet'.tr(),
                 style: TextStyle(
@@ -34,9 +32,7 @@ class NoAddedYet extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              SizedBox(
-                height: 200.sp,
-              ),
+              SizedBox(height: 200.sp),
             ],
           ),
         ),

@@ -7,23 +7,19 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:yamakan/constants/color_constants.dart';
 import 'package:yamakan/models/page_model.dart';
 
-class ScrollImages extends StatefulWidget {
+class ScrollImages extends StatelessWidget {
   const ScrollImages({
     required this.place,
     super.key,
   });
   final PageModel place;
-  @override
-  State<ScrollImages> createState() => _ScrollImagesState();
-}
 
-class _ScrollImagesState extends State<ScrollImages> {
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(top: 8.sp),
       child: CarouselSlider.builder(
-        itemCount: widget.place.imagePaths!.length,
+        itemCount: place.imagePaths!.length,
         itemBuilder: (
           BuildContext context,
           int index,
@@ -32,7 +28,7 @@ class _ScrollImagesState extends State<ScrollImages> {
             ClipRRect(
           borderRadius: BorderRadius.circular(15.sp),
           child: CachedNetworkImage(
-            imageUrl: widget.place.imagePaths![index],
+            imageUrl: place.imagePaths![index],
             fit: BoxFit.cover,
             width: double.infinity,
             placeholder: (context, url) {
@@ -43,11 +39,24 @@ class _ScrollImagesState extends State<ScrollImages> {
               );
             },
             errorWidget: (context, url, error) {
-              return IconButton(
-                icon: const Icon(
-                  Icons.signal_wifi_statusbar_connected_no_internet_4,
-                ),
-                onPressed: customSnackBar,
+              Future.delayed(const Duration(seconds: 1), () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    backgroundColor: kMainColor,
+                    content: Center(
+                      child: Text(
+                        'checkInternet'.tr(),
+                        style: const TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                );
+              });
+
+              return const Icon(
+                Icons.signal_wifi_statusbar_connected_no_internet_4,
               );
             },
           ),
@@ -70,22 +79,5 @@ class _ScrollImagesState extends State<ScrollImages> {
         ),
       ),
     );
-  }
-
-  /// Custom SnackBar
-  void customSnackBar() {
-    final snackBar = SnackBar(
-      backgroundColor: kMainColor,
-      content: Center(
-        child: Text(
-          'checkInternet'.tr(),
-          style: const TextStyle(
-            color: Colors.white,
-          ),
-        ),
-      ),
-    );
-    ScaffoldMessenger.of(context).showSnackBar(snackBar);
-    setState(() {});
   }
 }

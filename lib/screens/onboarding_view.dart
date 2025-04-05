@@ -48,16 +48,12 @@ class OnBoarding extends StatelessWidget {
             Row(
               children: [
                 const Spacer(),
-                SizedBox(
-                  width: 60.sp,
-                ),
+                SizedBox(width: 60.sp),
               ],
             ),
             //
             Padding(
-              padding: EdgeInsets.all(
-                20.sp,
-              ),
+              padding: EdgeInsets.all(20.sp),
               child: SizedBox(
                 height: 463.sp,
                 width: 333.sp,
@@ -152,9 +148,7 @@ class OnBoarding extends StatelessWidget {
             CustomFadeInUp(
               duration: 500,
               child: Padding(
-                padding: EdgeInsets.all(
-                  16.sp,
-                ),
+                padding: EdgeInsets.all(16.sp),
                 child: SizedBox(
                   width: 342.sp,
                   child: Text(
@@ -172,25 +166,18 @@ class OnBoarding extends StatelessWidget {
             CustomFadeInUp(
               duration: 500,
               child: Padding(
-                padding: EdgeInsets.all(
-                  16.sp,
-                ),
+                padding: EdgeInsets.all(16.sp),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: kMainColor,
-                    fixedSize: Size(
-                      327.sp,
-                      56.sp,
+                    fixedSize: Size(327.sp, 56.sp),
+                  ),
+                  onPressed: () => Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HomePage(),
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const HomePage(),
-                      ),
-                    );
-                  },
                   child: Text(
                     'startOnBoard'.tr(),
                     textAlign: TextAlign.center,

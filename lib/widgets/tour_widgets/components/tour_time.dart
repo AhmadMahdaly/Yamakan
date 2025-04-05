@@ -11,9 +11,7 @@ class TourTime extends StatelessWidget {
   final String carTime;
   final String walkTime;
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
         horizontal: 19.sp,
@@ -25,17 +23,13 @@ class TourTime extends StatelessWidget {
             size: 24.sp,
             color: kMainColor,
           ),
-          SizedBox(
-            width: 16.sp,
-          ),
+          SizedBox(width: 16.sp),
           Icon(
             Icons.directions_car_outlined,
             size: 14.sp,
             color: kMainColor,
           ),
-          SizedBox(
-            width: 4.sp,
-          ),
+          SizedBox(width: 4.sp),
           Text(
             carTime,
             style: TextStyle(
@@ -50,9 +44,7 @@ class TourTime extends StatelessWidget {
             size: 14.sp,
             color: kMainColor,
           ),
-          SizedBox(
-            width: 4.sp,
-          ),
+          SizedBox(width: 4.sp),
           Text(
             walkTime,
             style: TextStyle(
@@ -61,9 +53,7 @@ class TourTime extends StatelessWidget {
               fontWeight: FontWeight.w400,
             ),
           ),
-          SizedBox(
-            width: 16.sp,
-          ),
+          SizedBox(width: 16.sp),
         ],
       ),
     );

@@ -7,25 +7,19 @@ class CategoryItemWidget extends StatelessWidget {
 
   final CategoryItemModel item;
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => item.categoryPage!,
-          ),
-        );
-      },
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => item.categoryPage!,
+        ),
+      ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Container(
-            padding: EdgeInsets.all(
-              15.sp,
-            ),
+            padding: EdgeInsets.all(15.sp),
             width: 64.sp,
             height: 64.sp,
             decoration: ShapeDecoration(
@@ -34,31 +28,20 @@ class CategoryItemWidget extends StatelessWidget {
                 side: const BorderSide(
                   color: Color(0xFFEBEBEB),
                 ),
-                borderRadius: BorderRadius.circular(
-                  15.sp,
-                ),
+                borderRadius: BorderRadius.circular(15.sp),
               ),
               shadows: const [
                 BoxShadow(
-                  color: Color(
-                    0x26000000,
-                  ),
+                  color: Color(0x26000000),
                   blurRadius: 4,
-                  offset: Offset(
-                    0,
-                    3,
-                  ),
+                  offset: Offset(0, 3),
                   spreadRadius: 1,
                 ),
               ],
             ),
-            child: Image.asset(
-              item.icon!,
-            ),
+            child: Image.asset(item.icon!),
           ),
-          SizedBox(
-            height: 10.sp,
-          ),
+          SizedBox(height: 10.sp),
           Text(
             item.title!,
             style: TextStyle(

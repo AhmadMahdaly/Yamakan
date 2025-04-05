@@ -10,12 +10,10 @@ class ActivityItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => item.page!),
-        );
-      },
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => item.page!),
+      ),
       child: Container(
         margin: EdgeInsets.only(
           bottom: 16.sp,
@@ -26,20 +24,13 @@ class ActivityItemCard extends StatelessWidget {
         decoration: ShapeDecoration(
           color: Colors.white,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(
-              15.sp,
-            ),
+            borderRadius: BorderRadius.circular(15.sp),
           ),
           shadows: const [
             BoxShadow(
-              color: Color(
-                0x19000000,
-              ),
+              color: Color(0x19000000),
               blurRadius: 8,
-              offset: Offset(
-                0,
-                2,
-              ),
+              offset: Offset(0, 2),
               spreadRadius: 1,
             ),
           ],
@@ -50,14 +41,10 @@ class ActivityItemCard extends StatelessWidget {
           children: [
             /// Activity Image
             Container(
-              margin: EdgeInsets.all(
-                8.sp,
-              ),
+              margin: EdgeInsets.all(8.sp),
               clipBehavior: Clip.antiAlias,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(
-                  13.sp,
-                ),
+                borderRadius: BorderRadius.circular(13.sp),
               ),
               width: 160.sp,
               height: 96.sp,
@@ -94,19 +81,13 @@ class ActivityItemCard extends StatelessWidget {
                   Icon(
                     Icons.location_on_outlined,
                     size: 15.sp,
-                    color: const Color(
-                      0xFF71717A,
-                    ),
+                    color: const Color(0xFF71717A),
                   ),
-                  SizedBox(
-                    width: 4.sp,
-                  ),
+                  SizedBox(width: 4.sp),
                   Text(
                     item.activityLocation!,
                     style: TextStyle(
-                      color: const Color(
-                        0xFF71717A,
-                      ),
+                      color: const Color(0xFF71717A),
                       fontSize: 10.sp,
                       fontWeight: FontWeight.w400,
                     ),
@@ -158,9 +139,7 @@ class ActivityItemCard extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
-              height: 4.sp,
-            ),
+            SizedBox(height: 4.sp),
           ],
         ),
       ),

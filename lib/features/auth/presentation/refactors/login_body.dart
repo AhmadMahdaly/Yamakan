@@ -12,29 +12,17 @@ class LoginBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.all(
-        16.sp,
-      ),
+      padding: EdgeInsets.all(16.sp),
       children: [
         SignHeader(
           welcomeText: 'Welcomeback'.tr(),
           text: 'ContinueExplore'.tr(),
         ),
-        SizedBox(
-          height: 36.sp,
-        ),
-        CustomTextField(
-          text: 'Mobile'.tr(),
-        ),
-        SizedBox(
-          height: 16.sp,
-        ),
-        CustomPasswordField(
-          text: 'Password'.tr(),
-        ),
-        SizedBox(
-          height: 16.sp,
-        ),
+        SizedBox(height: 36.sp),
+        CustomTextField(text: 'Mobile'.tr()),
+        SizedBox(height: 16.sp),
+        CustomPasswordField(text: 'Password'.tr()),
+        SizedBox(height: 16.sp),
         Text(
           'Forgotpassword'.tr(),
           textAlign: TextAlign.end,
@@ -46,12 +34,8 @@ class LoginBody extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
-        SizedBox(
-          height: 16.sp,
-        ),
-        CustomButton(
-          text: 'SignIn'.tr(),
-        ),
+        SizedBox(height: 16.sp),
+        CustomButton(text: 'SignIn'.tr()),
       ],
     );
   }

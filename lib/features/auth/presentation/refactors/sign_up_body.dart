@@ -11,38 +11,20 @@ class SignUpBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.all(
-        16.sp,
-      ),
+      padding: EdgeInsets.all(16.sp),
       children: [
         SignHeader(
           welcomeText: 'WelcometoYaMakan'.tr(),
           text: 'LetsExplore'.tr(),
         ),
-        SizedBox(
-          height: 36.sp,
-        ),
-        CustomTextField(
-          text: 'FullName'.tr(),
-        ),
-        SizedBox(
-          height: 16.sp,
-        ),
-        CustomTextField(
-          text: 'Mobile'.tr(),
-        ),
-        SizedBox(
-          height: 16.sp,
-        ),
-        CustomPasswordField(
-          text: 'Password'.tr(),
-        ),
-        SizedBox(
-          height: 24.sp,
-        ),
-        CustomButton(
-          text: 'CreateAccount'.tr(),
-        ),
+        SizedBox(height: 36.sp),
+        CustomTextField(text: 'FullName'.tr()),
+        SizedBox(height: 16.sp),
+        CustomTextField(text: 'Mobile'.tr()),
+        SizedBox(height: 16.sp),
+        CustomPasswordField(text: 'Password'.tr()),
+        SizedBox(height: 24.sp),
+        CustomButton(text: 'CreateAccount'.tr()),
       ],
     );
   }

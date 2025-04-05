@@ -17,14 +17,12 @@ class TourPlaceCardWidget extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(8.sp),
       child: GestureDetector(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => card.placePage!,
-            ),
-          );
-        },
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => card.placePage!,
+          ),
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -50,10 +48,7 @@ class TourPlaceCardWidget extends StatelessWidget {
                     BoxShadow(
                       color: Color(0x19000000),
                       blurRadius: 4,
-                      offset: Offset(
-                        2,
-                        4,
-                      ),
+                      offset: Offset(2, 4),
                     ),
                   ],
                 ),
@@ -67,9 +62,7 @@ class TourPlaceCardWidget extends StatelessWidget {
                       width: 65.sp,
                       fit: BoxFit.cover,
                     ),
-                    SizedBox(
-                      width: 8.sp,
-                    ),
+                    SizedBox(width: 8.sp),
 
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -89,16 +82,12 @@ class TourPlaceCardWidget extends StatelessWidget {
                         Text(
                           card.placeName!,
                           style: TextStyle(
-                            color: const Color(
-                              0xFF404040,
-                            ),
+                            color: const Color(0xFF404040),
                             fontSize: 12.sp,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                        SizedBox(
-                          height: 4.sp,
-                        ),
+                        SizedBox(height: 4.sp),
                         Row(
                           children: [
                             /// time
@@ -106,37 +95,27 @@ class TourPlaceCardWidget extends StatelessWidget {
                               Icons.access_time,
                               size: 13.sp,
                             ),
-                            SizedBox(
-                              width: 4.sp,
-                            ),
+                            SizedBox(width: 4.sp),
                             Text(
                               card.time!,
                               style: TextStyle(
-                                color: const Color(
-                                  0xFF878787,
-                                ),
+                                color: const Color(0xFF878787),
                                 fontSize: 10.sp,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                            SizedBox(
-                              width: 20.sp,
-                            ),
+                            SizedBox(width: 20.sp),
 
                             /// fees
                             Icon(
                               Icons.money_outlined,
                               size: 13.sp,
                             ),
-                            SizedBox(
-                              width: 4.sp,
-                            ),
+                            SizedBox(width: 4.sp),
                             Text(
                               card.fees!,
                               style: TextStyle(
-                                color: const Color(
-                                  0xFF878787,
-                                ),
+                                color: const Color(0xFF878787),
                                 fontSize: 10.sp,
                                 fontWeight: FontWeight.w400,
                               ),

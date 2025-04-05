@@ -12,9 +12,7 @@ import 'package:yamakan/widgets/show_exit_confirmation.dart';
 // import 'package:yamkan/screens/wishlist.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({
-    super.key,
-  });
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => HomePageState();

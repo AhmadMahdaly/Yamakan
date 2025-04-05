@@ -69,9 +69,7 @@ class _CategoryItemsListState extends State<CategoryItemsList> {
         padding: EdgeInsets.symmetric(
           horizontal: 3.sp,
         ),
-        child: CategoryItemWidget(
-          item: list[index],
-        ),
+        child: CategoryItemWidget(item: list[index]),
       ),
       itemCount: list.length,
     );

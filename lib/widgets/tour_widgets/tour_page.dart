@@ -18,9 +18,7 @@ class TourPagePathPaint extends StatelessWidget {
   final Widget? cardDestinations;
 
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 50.sp,
@@ -40,9 +38,7 @@ class TourPagePathPaint extends StatelessWidget {
                   TextSpan(
                     text: '\n$nomDestinations ${"Destinations".tr()}',
                     style: TextStyle(
-                      color: const Color(
-                        0xFF404040,
-                      ),
+                      color: const Color(0xFF404040),
                       fontSize: 10.sp,
                       fontWeight: FontWeight.w400,
                     ),
@@ -53,9 +49,7 @@ class TourPagePathPaint extends StatelessWidget {
           ],
         ),
         leading: IconButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
+          onPressed: () => Navigator.of(context).pop(),
           icon: Icon(
             Icons.arrow_back_ios_new,
             size: 22.sp,
@@ -78,19 +72,13 @@ class TourPagePathPaint extends StatelessWidget {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: image4?.length,
-                itemBuilder: (
-                  BuildContext context,
-                  int index,
-                ) =>
-                    FourImagesWidget(
+                itemBuilder: (context, index) => FourImagesWidget(
                   images4: image4![index],
                 ),
               ),
             ),
           ),
-          SizedBox(
-            height: 16.sp,
-          ),
+          SizedBox(height: 16.sp),
 
           /// tour place cards
           cardDestinations!,

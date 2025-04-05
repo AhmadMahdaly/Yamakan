@@ -13,10 +13,7 @@ import 'package:yamakan/widgets/place_page_widgets/components/scroll_images.dart
 import 'package:yamakan/widgets/place_page_widgets/components/top_page_button.dart';
 
 class PlacePageCategory extends StatelessWidget {
-  const PlacePageCategory({
-    required this.place,
-    super.key,
-  });
+  const PlacePageCategory({required this.place, super.key});
   final PageModel place;
 
   // bool isChanging = false;
@@ -32,23 +29,14 @@ class PlacePageCategory extends StatelessWidget {
         leadingWidth: 52.sp,
         automaticallyImplyLeading: false,
         forceMaterialTransparency: true,
-        leading:
-            //  CustomFadeInDown(
-            //   duration: 400,
-            //   child:
-            IconButton(
-          onPressed: () {
-            Navigator.of(
-              context,
-            ).pop();
-          },
+        leading: IconButton(
+          onPressed: () => Navigator.of(context).pop(),
           icon: TopPageButton(
             icon: Icon(
               Icons.arrow_back_ios_new,
               size: 22.sp,
               color: kMainColor,
             ),
-            // ),
           ),
         ),
         // actions: [
@@ -124,9 +112,7 @@ class PlacePageCategory extends StatelessWidget {
             expandedHeight: 260.sp,
             flexibleSpace: FlexibleSpaceBar(
               /// images
-              background: ScrollImages(
-                place: place,
-              ),
+              background: ScrollImages(place: place),
             ),
           ),
 
@@ -143,9 +129,7 @@ class PlacePageCategory extends StatelessWidget {
                 child: Text(
                   place.placeName!,
                   style: TextStyle(
-                    color: const Color(
-                      0xFF7A7A7A,
-                    ),
+                    color: const Color(0xFF7A7A7A),
                     fontSize: 18.sp,
                     fontWeight: FontWeight.w600,
                   ),
@@ -158,9 +142,7 @@ class PlacePageCategory extends StatelessWidget {
           SliverToBoxAdapter(
             child: CustomFadeInRight(
               duration: 500,
-              child: LocationBottonWidget(
-                place: place,
-              ),
+              child: LocationBottonWidget(place: place),
             ),
           ),
 
@@ -280,15 +262,11 @@ class PlacePageCategory extends StatelessWidget {
           SliverToBoxAdapter(
             child: CustomFadeInUp(
               duration: 600,
-              child: BuyTicketButton(
-                place: place,
-              ),
+              child: BuyTicketButton(place: place),
             ),
           ),
           SliverToBoxAdapter(
-            child: SizedBox(
-              height: 14.sp,
-            ),
+            child: SizedBox(height: 14.sp),
           ),
         ],
       ),

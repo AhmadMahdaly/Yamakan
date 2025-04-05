@@ -23,9 +23,7 @@ class YaMakan extends StatelessWidget {
       ),
       minTextAdapt: true,
       child: ChangeNotifierProvider(
-        create: (context) => LocaleModel(
-          _prefs,
-        ),
+        create: (context) => LocaleModel(_prefs),
         child: Consumer<LocaleModel>(
           builder: (context, localeModel, child) => MaterialApp(
             debugShowCheckedModeBanner: false,
@@ -34,9 +32,7 @@ class YaMakan extends StatelessWidget {
             supportedLocales: context.supportedLocales,
             locale: context.locale,
             builder: (context, navigator) {
-              final lang = Localizations.localeOf(
-                context,
-              ).languageCode;
+              final lang = Localizations.localeOf(context).languageCode;
 
               return Theme(
                 data: ThemeData(

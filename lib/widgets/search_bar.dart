@@ -6,10 +6,7 @@ import 'package:yamakan/models/page_model.dart';
 import 'package:yamakan/widgets/place_page_widgets/place_page.dart';
 
 class HomeSearchBar extends StatefulWidget {
-  const HomeSearchBar({
-    required this.hint,
-    super.key,
-  });
+  const HomeSearchBar({required this.hint, super.key});
   final String hint;
   @override
   State<HomeSearchBar> createState() => _HomeSearchBarState();
@@ -40,9 +37,7 @@ class _HomeSearchBarState extends State<HomeSearchBar> {
         filled: true, // تفعيل الخلفية الملونة
         fillColor: const Color(0xffFEF7FF),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(
-            24.sp,
-          ),
+          borderRadius: BorderRadius.circular(24.sp),
           borderSide: const BorderSide(
             color: Color(0xffFEF7FF),
           ),
@@ -52,9 +47,7 @@ class _HomeSearchBarState extends State<HomeSearchBar> {
           borderSide: const BorderSide(
             color: Color(0xFFE5E5E5),
           ),
-          borderRadius: BorderRadius.circular(
-            24.sp,
-          ),
+          borderRadius: BorderRadius.circular(24.sp),
         ),
 
         hintText: widget.hint,
@@ -246,9 +239,8 @@ class CustomSearchDelegate extends SearchDelegate<String> {
       'MahmoudKhalilMuseum'.tr(),
     ];
 
-    // ignore: omit_local_variable_types
-    final List<String> suggestionList = query.isEmpty
-        ? []
+    final suggestionList = query.isEmpty
+        ? <String>[]
         : searchList
             .where(
               (item) => item.toLowerCase().contains(
@@ -2160,19 +2152,4 @@ class CustomSearchDelegate extends SearchDelegate<String> {
       },
     );
   }
-
-  // Widget build(BuildContext context) {
-  //   return Center(
-  //     child: Container(
-  //       width: 150,
-  //       decoration: const BoxDecoration(
-  //         image: DecorationImage(
-  //           image: AssetImage(
-  //             'assets/images/searchPage.png',
-  //           ),
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }
 }

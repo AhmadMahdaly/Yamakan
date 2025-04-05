@@ -11,46 +11,26 @@ class FayoumList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.symmetric(
-        horizontal: 8.sp,
-      ),
+      padding: EdgeInsets.symmetric(horizontal: 8.sp),
       scrollDirection: Axis.horizontal,
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: FayoumPlaces().all[0],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: FayoumPlaces().all[0]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: FayoumPlaces().all[1],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: FayoumPlaces().all[1]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: FayoumPlaces().all[5],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: FayoumPlaces().all[5]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: FayoumPlaces().all[6],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: FayoumPlaces().all[6]),
         ),
-        const NextArrow(
-          path: FayoumGrid(),
-        ),
+        const NextArrow(path: FayoumGrid()),
       ],
     );
   }

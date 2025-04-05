@@ -11,53 +11,33 @@ class CairoList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.symmetric(
-        horizontal: 8.sp,
-      ),
+      padding: EdgeInsets.symmetric(horizontal: 8.sp),
       scrollDirection: Axis.horizontal,
       children: [
         /// القلعة
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: CairoPlaces().all[6],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: CairoPlaces().all[6]),
         ),
 
         /// ش المعز
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: CairoPlaces().all[12],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: CairoPlaces().all[12]),
         ),
 
         /// مجمع الأديان
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: CairoPlaces().all[20],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: CairoPlaces().all[20]),
         ),
 
         /// المتحف المصري
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: CairoPlaces().all[21],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: CairoPlaces().all[21]),
         ),
-        const NextArrow(
-          path: CairoItems(),
-        ),
+        const NextArrow(path: CairoItems()),
       ],
     );
   }

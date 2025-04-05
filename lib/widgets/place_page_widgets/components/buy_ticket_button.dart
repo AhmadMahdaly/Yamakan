@@ -7,10 +7,7 @@ import 'package:yamakan/constants/color_constants.dart';
 import 'package:yamakan/models/page_model.dart';
 
 class BuyTicketButton extends StatefulWidget {
-  const BuyTicketButton({
-    required this.place,
-    super.key,
-  });
+  const BuyTicketButton({required this.place, super.key});
   final PageModel place;
 
   @override
@@ -52,9 +49,7 @@ class _BuyTicketButtonState extends State<BuyTicketButton> {
                     height: 1.5.sp,
                   ),
                 ),
-                SizedBox(
-                  height: 8.sp,
-                ),
+                SizedBox(height: 8.sp),
                 GestureDetector(
                   onTap: _launchUrl,
                   child: CustomButton(

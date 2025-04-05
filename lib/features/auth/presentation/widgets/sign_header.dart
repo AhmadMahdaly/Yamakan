@@ -48,9 +48,7 @@ class SignHeader extends StatelessWidget {
             'assets/images/logo.svg',
           ),
         ),
-        SizedBox(
-          width: 20.sp,
-        ),
+        SizedBox(width: 20.sp),
       ],
     );
   }

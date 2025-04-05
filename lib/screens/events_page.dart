@@ -51,11 +51,7 @@ class EventsPage extends StatelessWidget {
       ),
       body: ListView.builder(
         itemCount: eventsList.length,
-        itemBuilder: (
-          context,
-          index,
-        ) =>
-            EventsCardWidget(
+        itemBuilder: (context, index) => EventsCardWidget(
           event: eventsList[index],
         ),
       ),

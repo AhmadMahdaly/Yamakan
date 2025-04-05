@@ -58,9 +58,7 @@ class _SeeAllPageItemsState extends State<SeeAllPageItems>
                       color: kMainColor,
                       size: 24.sp,
                     ), // تغيير لون الأيقونة هنا
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
+                    onPressed: () => Navigator.of(context).pop(),
                   ),
                   Text(
                     widget.title,
@@ -73,14 +71,10 @@ class _SeeAllPageItemsState extends State<SeeAllPageItems>
                 ],
               ),
               PreferredSize(
-                preferredSize: Size.fromHeight(
-                  50.sp,
-                ),
+                preferredSize: Size.fromHeight(50.sp),
                 child: Builder(
                   builder: (context) => Padding(
-                    padding: EdgeInsets.only(
-                      bottom: 4.sp,
-                    ),
+                    padding: EdgeInsets.only(bottom: 4.sp),
                     child: HomeSearchBar(
                       hint: '${'SearchBarTitle'.tr()} ',
                       // '${widget.title}',
@@ -97,9 +91,7 @@ class _SeeAllPageItemsState extends State<SeeAllPageItems>
             ),
             indicator: BoxDecoration(
               color: kMainColor,
-              borderRadius: BorderRadius.circular(
-                16.sp,
-              ),
+              borderRadius: BorderRadius.circular(16.sp),
             ),
             unselectedLabelColor: const Color(0xffA9A9A9),
             automaticIndicatorColorAdjustment: false,
@@ -115,72 +107,30 @@ class _SeeAllPageItemsState extends State<SeeAllPageItems>
             isScrollable: true,
             tabAlignment: TabAlignment.start,
             controller: _controller,
-            onTap: (index) {
-              setState(() {});
-            },
+            onTap: (index) => setState(() {
+              _controller.index = index;
+            }),
             tabs: [
-              Tab(
-                child: Text(
-                  'all'.tr(),
-                ),
-              ),
-              Tab(
-                child: Text(
-                  TR().historical,
-                ),
-              ),
-              Tab(
-                child: Text(
-                  TR().cultural,
-                ),
-              ),
-              Tab(
-                child: Text(
-                  TR().religious,
-                ),
-              ),
-              Tab(
-                child: Text(
-                  TR().parks,
-                ),
-              ),
-              Tab(
-                child: Text(
-                  TR().cafes,
-                ),
-              ),
-              Tab(
-                child: Text(
-                  TR().restaurants,
-                ),
-              ),
+              Tab(child: Text('all'.tr())),
+              Tab(child: Text(TR().historical)),
+              Tab(child: Text(TR().cultural)),
+              Tab(child: Text(TR().religious)),
+              Tab(child: Text(TR().parks)),
+              Tab(child: Text(TR().cafes)),
+              Tab(child: Text(TR().restaurants)),
             ],
           ),
         ),
         body: TabBarView(
           controller: _controller,
           children: <Widget>[
-            GridCityWidget(
-              list: widget.categoryLists[0],
-            ),
-            GridCityWidget(
-              list: widget.categoryLists[1],
-            ),
-            GridCityWidget(
-              list: widget.categoryLists[2],
-            ),
-            GridCityWidget(
-              list: widget.categoryLists[3],
-            ),
-            GridCityWidget(
-              list: widget.categoryLists[4],
-            ),
-            GridCityWidget(
-              list: widget.categoryLists[5],
-            ),
-            GridCityWidget(
-              list: widget.categoryLists[6],
-            ),
+            GridCityWidget(list: widget.categoryLists[0]),
+            GridCityWidget(list: widget.categoryLists[1]),
+            GridCityWidget(list: widget.categoryLists[2]),
+            GridCityWidget(list: widget.categoryLists[3]),
+            GridCityWidget(list: widget.categoryLists[4]),
+            GridCityWidget(list: widget.categoryLists[5]),
+            GridCityWidget(list: widget.categoryLists[6]),
           ],
         ),
       ),

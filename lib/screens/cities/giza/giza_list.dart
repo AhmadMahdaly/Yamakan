@@ -15,40 +15,22 @@ class GizaList extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: GizaPlaces().all[0],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: GizaPlaces().all[0]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: GizaPlaces().all[6],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: GizaPlaces().all[6]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: GizaPlaces().all[8],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: GizaPlaces().all[8]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: GizaPlaces().all[4],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: GizaPlaces().all[4]),
         ),
-        const NextArrow(
-          path: GizaGrid(),
-        ),
+        const NextArrow(path: GizaGrid()),
       ],
     );
   }

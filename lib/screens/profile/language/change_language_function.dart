@@ -14,9 +14,7 @@ class LanguageDropDownButton extends StatelessWidget {
     return Consumer<LocaleModel>(
       builder: (context, localeModel, child) => DropdownButton(
         dropdownColor: Colors.white,
-        borderRadius: BorderRadius.circular(
-          15.sp,
-        ),
+        borderRadius: BorderRadius.circular(15.sp),
         value: selectedLocale,
         items: [
           DropdownMenuItem(

@@ -4,10 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yamakan/models/item_model.dart';
 
 class CityItemCard extends StatelessWidget {
-  const CityItemCard({
-    required this.item,
-    super.key,
-  });
+  const CityItemCard({required this.item, super.key});
 
   final ItemModel item;
   @override
@@ -17,11 +14,7 @@ class CityItemCard extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (
-              context,
-            ) {
-              return item.page!;
-            },
+            builder: (context) => item.page!,
           ),
         );
       },
@@ -32,9 +25,7 @@ class CityItemCard extends StatelessWidget {
           ),
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: AssetImage(
-              item.image!,
-            ),
+            image: AssetImage(item.image!),
           ),
         ),
         width: 120.sp,

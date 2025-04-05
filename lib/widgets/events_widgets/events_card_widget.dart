@@ -5,10 +5,7 @@ import 'package:yamakan/constants/key_language.dart';
 import 'package:yamakan/models/event_page_model.dart';
 
 class EventsCardWidget extends StatelessWidget {
-  const EventsCardWidget({
-    required this.event,
-    super.key,
-  });
+  const EventsCardWidget({required this.event, super.key});
   final EventPageModel event;
 
   @override
@@ -24,28 +21,21 @@ class EventsCardWidget extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) {
-                return event.eventPage!;
-              },
+              builder: (context) => event.eventPage!,
             ),
           );
         },
         child: Container(
-                decoration: ShapeDecoration(
+          decoration: ShapeDecoration(
             color: Colors.white,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(
-                8.sp,
-              ),
+              borderRadius: BorderRadius.circular(8.sp),
             ),
             shadows: const [
               BoxShadow(
                 color: Color(0x19000000),
                 blurRadius: 4,
-                offset: Offset(
-                  2,
-                  4,
-                ),
+                offset: Offset(2, 4),
               ),
             ],
           ),
@@ -59,22 +49,16 @@ class EventsCardWidget extends StatelessWidget {
                   width: 100.sp,
                   height: 100.sp,
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(
-                      15.sp,
-                    ),
+                    borderRadius: BorderRadius.circular(15.sp),
                     child: Image.asset(
                       event.image!,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: 5.sp,
-                ),
+                SizedBox(width: 5.sp),
                 Padding(
-                  padding: EdgeInsets.all(
-                    8.sp,
-                  ),
+                  padding: EdgeInsets.all(8.sp),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -94,18 +78,14 @@ class EventsCardWidget extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(
-                        height: 4.sp,
-                      ),
+                      SizedBox(height: 4.sp),
                       Row(
                         children: [
                           Icon(
                             Icons.calendar_month_outlined,
                             size: 24.sp,
                           ),
-                          SizedBox(
-                            width: 4.sp,
-                          ),
+                          SizedBox(width: 4.sp),
 
                           ///
                           /// Day
@@ -118,16 +98,12 @@ class EventsCardWidget extends StatelessWidget {
                               fontWeight: FontWeight.w500,
                             ),
                           ),
-                          SizedBox(
-                            width: 8.sp,
-                          ),
+                          SizedBox(width: 8.sp),
                           Icon(
                             Icons.watch_later_outlined,
                             size: 24.sp,
                           ),
-                          SizedBox(
-                            width: 4.sp,
-                          ),
+                          SizedBox(width: 4.sp),
 
                           ///
                           /// Time

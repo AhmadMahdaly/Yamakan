@@ -48,9 +48,7 @@ class _LocationBottonWidgetState extends State<LocationBottonWidget> {
                     size: 14.sp,
                     color: kMainColor,
                   ),
-                  SizedBox(
-                    width: 6.sp,
-                  ),
+                  SizedBox(width: 6.sp),
                   GestureDetector(
                     onTap: _launchUrl,
                     child: Text(
@@ -83,15 +81,11 @@ class _LocationBottonWidgetState extends State<LocationBottonWidget> {
                     size: 14.sp,
                     color: kMainColor,
                   ),
-                  SizedBox(
-                    width: 6.sp,
-                  ),
+                  SizedBox(width: 6.sp),
                   Text(
                     widget.place.locationTitle!,
                     style: TextStyle(
-                      color: const Color(
-                        0xFF71717A,
-                      ),
+                      color: const Color(0xFF71717A),
                       fontSize: 12.sp,
                       fontWeight: FontWeight.w500,
                     ),

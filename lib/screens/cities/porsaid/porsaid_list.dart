@@ -11,46 +11,26 @@ class PortsaidList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      padding: EdgeInsets.symmetric(
-        horizontal: 8.sp,
-      ),
+      padding: EdgeInsets.symmetric(horizontal: 8.sp),
       scrollDirection: Axis.horizontal,
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: PortsaidPlaces().all[0],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: PortsaidPlaces().all[0]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: PortsaidPlaces().all[1],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: PortsaidPlaces().all[1]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: PortsaidPlaces().all[3],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: PortsaidPlaces().all[3]),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 8.sp,
-          ),
-          child: Item(
-            item: PortsaidPlaces().all[6],
-          ),
+          padding: EdgeInsets.symmetric(horizontal: 8.sp),
+          child: Item(item: PortsaidPlaces().all[6]),
         ),
-        const NextArrow(
-          path: PortsaidGrid(),
-        ),
+        const NextArrow(path: PortsaidGrid()),
       ],
     );
   }

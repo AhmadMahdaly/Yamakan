@@ -47,13 +47,9 @@ class Home extends StatelessWidget {
                           'assets/images/logo.svg',
                           width: 40.sp,
                         ),
-                        SizedBox(
-                          height: 24.sp,
-                        ),
+                        SizedBox(height: 24.sp),
                         Padding(
-                          padding: EdgeInsets.only(
-                            bottom: 12.sp,
-                          ),
+                          padding: EdgeInsets.only(bottom: 12.sp),
                           child: CustomFadeInRight(
                             duration: 500,
                             child: Text(
@@ -85,9 +81,7 @@ class Home extends StatelessWidget {
                       width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(
-                          bottomRight: Radius.circular(
-                            45.sp,
-                          ),
+                          bottomRight: Radius.circular(45.sp),
                         ),
                         color: kMainColor,
                       ),
@@ -96,18 +90,14 @@ class Home extends StatelessWidget {
                       width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(
-                            45.sp,
-                          ),
+                          bottomLeft: Radius.circular(45.sp),
                         ),
                         color: kMainColor,
                       ),
                     ),
             ),
             bottom: PreferredSize(
-              preferredSize: Size.fromHeight(
-                130.sp,
-              ),
+              preferredSize: Size.fromHeight(130.sp),
               child: Builder(
                 builder: (context) => Padding(
                   padding: EdgeInsets.only(
@@ -227,9 +217,7 @@ class Home extends StatelessWidget {
           ),
           //END OF PAGE
           SliverToBoxAdapter(
-            child: SizedBox(
-              height: 8.sp,
-            ),
+            child: SizedBox(height: 8.sp),
           ),
         ],
       ),

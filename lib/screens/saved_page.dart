@@ -20,9 +20,7 @@ class WishlistPage extends StatelessWidget {
               height: 220.sp,
             ),
             Padding(
-              padding: EdgeInsets.all(
-                20.sp,
-              ),
+              padding: EdgeInsets.all(20.sp),
               child: Text(
                 'NoFavorites'.tr(),
                 style: TextStyle(
@@ -41,30 +39,22 @@ class WishlistPage extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(
-              height: 20.sp,
-            ),
+            SizedBox(height: 20.sp),
             Padding(
-              padding: EdgeInsets.all(
-                16.sp,
-              ),
+              padding: EdgeInsets.all(16.sp),
               child: GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const HomePage(),
-                    ),
-                  );
-                },
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomePage(),
+                  ),
+                ),
                 child: Container(
                   width: 327.sp,
                   height: 56.sp,
                   decoration: BoxDecoration(
                     color: kMainColor,
-                    borderRadius: BorderRadius.circular(
-                      8.sp,
-                    ),
+                    borderRadius: BorderRadius.circular(8.sp),
                   ),
                   alignment: Alignment.center,
                   child: Text(

@@ -14,24 +14,16 @@ class NextArrow extends StatelessWidget {
     return Container(
       height: 32.sp,
       width: 32.sp,
-      margin: EdgeInsets.all(
-        10.sp,
-      ),
+      margin: EdgeInsets.all(10.sp),
       decoration: const BoxDecoration(
         shape: BoxShape.circle,
         color: kMainColor,
       ),
       child: IconButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) {
-                return path;
-              },
-            ),
-          );
-        },
+        onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => path),
+        ),
         icon: RotatedBox(
           quarterTurns: 2,
           child: Icon(
@@ -55,18 +47,10 @@ class ToNextPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (
-              context,
-            ) {
-              return path;
-            },
-          ),
-        );
-      },
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => path),
+      ),
       child: CircleAvatar(
         backgroundColor: kMainColor,
         child: RotatedBox(

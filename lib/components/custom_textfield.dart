@@ -3,10 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yamakan/constants/color_constants.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({
-    required this.text,
-    super.key,
-  });
+  const CustomTextField({required this.text, super.key});
   final String text;
   @override
   Widget build(BuildContext context) {
@@ -15,9 +12,7 @@ class CustomTextField extends StatelessWidget {
         filled: true, // تفعيل الخلفية الملونة
         fillColor: const Color(0xffFEF7FF),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(
-            15.sp,
-          ),
+          borderRadius: BorderRadius.circular(15.sp),
           borderSide: const BorderSide(
             color: kMainColor,
           ),
@@ -31,9 +26,7 @@ class CustomTextField extends StatelessWidget {
         border: const OutlineInputBorder(),
 
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(
-            15.sp,
-          ),
+          borderRadius: BorderRadius.circular(15.sp),
           borderSide: const BorderSide(
             color: kShadowColor,
           ),
@@ -57,9 +50,7 @@ class CustomPasswordField extends StatelessWidget {
         filled: true,
         fillColor: const Color(0xffFEF7FF),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(
-            15.sp,
-          ),
+          borderRadius: BorderRadius.circular(15.sp),
           borderSide: const BorderSide(
             color: kMainColor,
           ),
@@ -74,9 +65,7 @@ class CustomPasswordField extends StatelessWidget {
         border: const OutlineInputBorder(),
 
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(
-            15.sp,
-          ),
+          borderRadius: BorderRadius.circular(15.sp),
           borderSide: const BorderSide(
             color: kShadowColor,
           ),

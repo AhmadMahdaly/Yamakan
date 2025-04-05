@@ -13,25 +13,18 @@ class Language extends StatelessWidget {
     return CustomFadeInDown(
       duration: 400,
       child: Padding(
-        padding: EdgeInsets.only(
-          top: 8.sp,
-        ),
+        padding: EdgeInsets.only(top: 8.sp),
         child: Container(
           decoration: ShapeDecoration(
             color: Colors.white,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(
-                15.sp,
-              ),
+              borderRadius: BorderRadius.circular(15.sp),
             ),
             shadows: const [
               BoxShadow(
                 color: Color(0x19000000),
                 blurRadius: 4,
-                offset: Offset(
-                  2,
-                  4,
-                ),
+                offset: Offset(2, 4),
               ),
             ],
           ),
@@ -49,9 +42,7 @@ class Language extends StatelessWidget {
                     'assets/images/profile/ion_language-outline.svg',
                     width: 20.sp,
                   ),
-                  SizedBox(
-                    width: 10.sp,
-                  ),
+                  SizedBox(width: 10.sp),
                   Text(
                     'ChangeLanguage'.tr(),
                     style: TextStyle(
@@ -61,7 +52,7 @@ class Language extends StatelessWidget {
                     ),
                   ),
                   const Spacer(),
-                  LanguageDropDownButton(),
+                  const LanguageDropDownButton(),
                 ],
               ),
             ),

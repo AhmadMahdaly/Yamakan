@@ -17,14 +17,10 @@ class GridPlacesWidget extends StatelessWidget {
         : CustomFadeInUp(
             duration: 800,
             child: GridView.builder(
-              padding: EdgeInsets.all(
-                16.sp,
-              ),
+              padding: EdgeInsets.all(16.sp),
               itemCount: list.length,
               itemBuilder: (context, index) {
-                return Item(
-                  item: list[index],
-                );
+                return Item(item: list[index]);
               },
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 mainAxisExtent: 150.sp,
