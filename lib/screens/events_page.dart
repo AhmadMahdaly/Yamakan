@@ -7,14 +7,10 @@ import 'package:yamakan/widgets/events_widgets/event_page_widget.dart';
 import 'package:yamakan/widgets/events_widgets/events_card_widget.dart';
 
 class EventsPage extends StatelessWidget {
-  const EventsPage({
-    super.key,
-  });
+  const EventsPage({super.key});
 
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     final eventsList = <EventPageModel>[
       EventPageModel(
         eventPage: EventsPagesWidget(

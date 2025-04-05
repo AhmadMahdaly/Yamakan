@@ -65,19 +65,14 @@ class _CategoryItemsListState extends State<CategoryItemsList> {
         horizontal: 13.sp,
       ),
       scrollDirection: Axis.horizontal,
-      itemBuilder: (
-        BuildContext context,
-        int index,
-      ) {
-        return Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: 3.sp,
-          ),
-          child: CategoryItemWidget(
-            item: list[index],
-          ),
-        );
-      },
+      itemBuilder: (context, index) => Padding(
+        padding: EdgeInsets.symmetric(
+          horizontal: 3.sp,
+        ),
+        child: CategoryItemWidget(
+          item: list[index],
+        ),
+      ),
       itemCount: list.length,
     );
   }

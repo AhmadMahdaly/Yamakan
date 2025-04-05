@@ -7,14 +7,9 @@ import 'package:yamakan/constants/color_constants.dart';
 import 'package:yamakan/widgets/navigation_bar_app.dart';
 import 'package:yamakan/widgets/onboarding_widget.dart';
 
-class ToOnBoard extends StatefulWidget {
+class ToOnBoard extends StatelessWidget {
   const ToOnBoard({super.key});
 
-  @override
-  State<ToOnBoard> createState() => _ToOnBoardState();
-}
-
-class _ToOnBoardState extends State<ToOnBoard> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(

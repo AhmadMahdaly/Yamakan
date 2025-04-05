@@ -10,9 +10,7 @@ class TitleHomePage extends StatelessWidget {
   final String title;
 
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
         top: 20.sp,
@@ -40,9 +38,7 @@ class TitleCategoryPage extends StatelessWidget {
   final String title;
 
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
         top: 20.sp,

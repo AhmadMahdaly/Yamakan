@@ -4,9 +4,7 @@ import 'package:yamakan/data/cities/cairo_places.dart';
 import 'package:yamakan/widgets/city_widgets/city_see_all_page.dart';
 
 class CairoItems extends StatelessWidget {
-  const CairoItems({
-    super.key,
-  });
+  const CairoItems({super.key});
 
   @override
   Widget build(BuildContext context) {

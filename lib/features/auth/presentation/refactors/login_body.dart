@@ -7,9 +7,7 @@ import 'package:yamakan/constants/color_constants.dart';
 import 'package:yamakan/features/auth/presentation/widgets/sign_header.dart';
 
 class LoginBody extends StatelessWidget {
-  const LoginBody({
-    super.key,
-  });
+  const LoginBody({super.key});
 
   @override
   Widget build(BuildContext context) {

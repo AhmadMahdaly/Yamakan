@@ -7,9 +7,7 @@ import 'package:yamakan/widgets/category_widgets/activities/activity_item_card.d
 import 'package:yamakan/widgets/category_widgets/activities/activity_page_widget.dart';
 
 class ActivitiesItems extends StatelessWidget {
-  const ActivitiesItems({
-    super.key,
-  });
+  const ActivitiesItems({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -9,10 +9,7 @@ import 'package:yamakan/models/activity_page_model.dart';
 import 'package:yamakan/widgets/place_page_widgets/components/top_page_button.dart';
 
 class ActivitiesPageWidget extends StatefulWidget {
-  const ActivitiesPageWidget({
-    required this.page,
-    super.key,
-  });
+  const ActivitiesPageWidget({required this.page, super.key});
   final ActivityPageModel page;
 
   @override
@@ -33,7 +30,6 @@ class _ActivitiesPageWidgetState extends State<ActivitiesPageWidget> {
   }
 
   late final Uri _urlBook = Uri.parse(widget.page.bookUrl!);
-
   late final Uri _url = Uri.parse(widget.page.locationUrl!);
 
   @override
@@ -46,9 +42,7 @@ class _ActivitiesPageWidgetState extends State<ActivitiesPageWidget> {
         forceMaterialTransparency: true,
         leading: IconButton(
           onPressed: () {
-            Navigator.of(
-              context,
-            ).pop();
+            Navigator.of(context).pop();
           },
           icon: TopPageButton(
             icon: Icon(

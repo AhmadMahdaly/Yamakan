@@ -3,10 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yamakan/models/category_item_model.dart';
 
 class CategoryItemWidget extends StatelessWidget {
-  const CategoryItemWidget({
-    required this.item,
-    super.key,
-  });
+  const CategoryItemWidget({required this.item, super.key});
 
   final CategoryItemModel item;
   @override
@@ -18,9 +15,7 @@ class CategoryItemWidget extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) {
-              return item.categoryPage!;
-            },
+            builder: (context) => item.categoryPage!,
           ),
         );
       },

@@ -4,9 +4,7 @@ import 'package:yamakan/data/cities/alex_places.dart';
 import 'package:yamakan/widgets/city_widgets/city_see_all_page.dart';
 
 class AlexGrid extends StatelessWidget {
-  const AlexGrid({
-    super.key,
-  });
+  const AlexGrid({super.key});
 
   @override
   Widget build(BuildContext context) {

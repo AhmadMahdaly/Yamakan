@@ -6,9 +6,7 @@ import 'package:yamakan/screens/cities/giza/giza_grid_places.dart';
 import 'package:yamakan/widgets/place_page_widgets/place_item.dart';
 
 class GizaList extends StatelessWidget {
-  const GizaList({
-    super.key,
-  });
+  const GizaList({super.key});
 
   @override
   Widget build(BuildContext context) {

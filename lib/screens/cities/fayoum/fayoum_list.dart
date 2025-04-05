@@ -6,9 +6,7 @@ import 'package:yamakan/screens/cities/fayoum/fayoum_grid_place.dart';
 import 'package:yamakan/widgets/place_page_widgets/place_item.dart';
 
 class FayoumList extends StatelessWidget {
-  const FayoumList({
-    super.key,
-  });
+  const FayoumList({super.key});
 
   @override
   Widget build(BuildContext context) {

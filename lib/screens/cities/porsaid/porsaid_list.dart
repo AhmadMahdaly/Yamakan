@@ -6,9 +6,7 @@ import 'package:yamakan/screens/cities/porsaid/porsaid_grid_places.dart';
 import 'package:yamakan/widgets/place_page_widgets/place_item.dart';
 
 class PortsaidList extends StatelessWidget {
-  const PortsaidList({
-    super.key,
-  });
+  const PortsaidList({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -4,18 +4,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yamakan/constants/color_constants.dart';
 import 'package:yamakan/widgets/navigation_bar_app.dart';
 
-class WishlistPage extends StatefulWidget {
+class WishlistPage extends StatelessWidget {
   const WishlistPage({super.key});
 
   @override
-  State<WishlistPage> createState() => _WishlistPageState();
-}
-
-class _WishlistPageState extends State<WishlistPage> {
-  @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Column(

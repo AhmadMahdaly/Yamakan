@@ -9,9 +9,7 @@ class CustomButton extends StatelessWidget {
   });
   final String text;
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return Container(
       height: 50.sp,
       width: double.infinity,

@@ -6,9 +6,7 @@ import 'package:yamakan/components/custom_textfield.dart';
 import 'package:yamakan/features/auth/presentation/widgets/sign_header.dart';
 
 class SignUpBody extends StatelessWidget {
-  const SignUpBody({
-    super.key,
-  });
+  const SignUpBody({super.key});
 
   @override
   Widget build(BuildContext context) {

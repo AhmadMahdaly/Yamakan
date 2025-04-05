@@ -117,8 +117,11 @@ class _CategoryPageItemsState extends State<CategoryPageItems>
             tabAlignment: TabAlignment.start,
             controller: _controller,
             onTap: (index) {
-              setState(() {});
+              setState(() {
+                _controller.index = index;
+              });
             },
+            physics: const BouncingScrollPhysics(),
             tabs: [
               Tab(
                 child: Text(

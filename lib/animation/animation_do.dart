@@ -9,7 +9,6 @@ class CustomFadeInDown extends StatelessWidget {
   });
 
   final Widget child;
-
   final int duration;
 
   @override
@@ -30,7 +29,6 @@ class CustomFadeInUp extends StatelessWidget {
   });
 
   final Widget child;
-
   final int duration;
 
   @override
@@ -51,7 +49,6 @@ class CustomFadeInLeft extends StatelessWidget {
   });
 
   final Widget child;
-
   final int duration;
 
   @override
@@ -78,7 +75,6 @@ class CustomFadeInRight extends StatelessWidget {
   });
 
   final Widget child;
-
   final int duration;
 
   @override

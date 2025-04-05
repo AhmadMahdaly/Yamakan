@@ -4,9 +4,7 @@ import 'package:yamakan/data/cities/fayoum_places.dart';
 import 'package:yamakan/widgets/city_widgets/city_see_all_page.dart';
 
 class FayoumGrid extends StatelessWidget {
-  const FayoumGrid({
-    super.key,
-  });
+  const FayoumGrid({super.key});
 
   @override
   Widget build(BuildContext context) {

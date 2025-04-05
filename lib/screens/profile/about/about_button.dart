@@ -6,14 +6,10 @@ import 'package:yamakan/animation/animation_do.dart';
 import 'package:yamakan/screens/profile/about/about_page.dart';
 
 class AboutButton extends StatelessWidget {
-  const AboutButton({
-    super.key,
-  });
+  const AboutButton({super.key});
 
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return CustomFadeInDown(
       duration: 400,
       child: InkWell(

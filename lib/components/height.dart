@@ -6,8 +6,6 @@ class H extends StatelessWidget {
   final int h;
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: h.sp,
-    );
+    return SizedBox(height: h.sp);
   }
 }

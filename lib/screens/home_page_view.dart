@@ -16,9 +16,7 @@ import 'package:yamakan/widgets/search_bar.dart';
 import 'package:yamakan/widgets/tour_widgets/tour_card_widget.dart';
 
 class Home extends StatelessWidget {
-  const Home({
-    super.key,
-  });
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {

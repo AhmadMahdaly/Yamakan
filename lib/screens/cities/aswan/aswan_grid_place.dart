@@ -4,9 +4,7 @@ import 'package:yamakan/data/cities/aswan_places.dart';
 import 'package:yamakan/widgets/city_widgets/city_see_all_page.dart';
 
 class AswanGrid extends StatelessWidget {
-  const AswanGrid({
-    super.key,
-  });
+  const AswanGrid({super.key});
 
   @override
   Widget build(BuildContext context) {

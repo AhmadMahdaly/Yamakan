@@ -9,9 +9,7 @@ import 'package:yamakan/data/cities/portsaid_places.dart';
 import 'package:yamakan/widgets/category_widgets/category_page_widget.dart';
 
 class HistoricalPage extends StatelessWidget {
-  const HistoricalPage({
-    super.key,
-  });
+  const HistoricalPage({super.key});
 
   @override
   Widget build(

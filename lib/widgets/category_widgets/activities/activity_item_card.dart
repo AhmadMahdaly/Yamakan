@@ -5,28 +5,15 @@ import 'package:yamakan/constants/color_constants.dart';
 import 'package:yamakan/models/activity_data_model.dart';
 
 class ActivityItemCard extends StatelessWidget {
-  const ActivityItemCard({
-    required this.item,
-    super.key,
-  });
-
+  const ActivityItemCard({required this.item, super.key});
   final ActivityDataModel item;
-
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
         Navigator.push(
           context,
-          MaterialPageRoute(
-            builder: (
-              context,
-            ) {
-              return item.page!;
-            },
-          ),
+          MaterialPageRoute(builder: (context) => item.page!),
         );
       },
       child: Container(

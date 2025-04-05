@@ -4,9 +4,7 @@ import 'package:yamakan/data/cities/giza_places.dart';
 import 'package:yamakan/widgets/city_widgets/city_see_all_page.dart';
 
 class GizaGrid extends StatelessWidget {
-  const GizaGrid({
-    super.key,
-  });
+  const GizaGrid({super.key});
 
   @override
   Widget build(BuildContext context) {

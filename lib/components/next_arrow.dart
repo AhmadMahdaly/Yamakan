@@ -10,9 +10,7 @@ class NextArrow extends StatelessWidget {
 
   final Widget path;
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return Container(
       height: 32.sp,
       width: 32.sp,
@@ -55,9 +53,7 @@ class ToNextPage extends StatelessWidget {
 
   final Widget path;
   @override
-  Widget build(
-    BuildContext context,
-  ) {
+  Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
         Navigator.push(

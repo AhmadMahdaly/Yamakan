@@ -6,9 +6,7 @@ import 'package:yamakan/screens/cities/alex/alex_grid_places.dart';
 import 'package:yamakan/widgets/place_page_widgets/place_item.dart';
 
 class AlexItemsList extends StatelessWidget {
-  const AlexItemsList({
-    super.key,
-  });
+  const AlexItemsList({super.key});
 
   @override
   Widget build(BuildContext context) {

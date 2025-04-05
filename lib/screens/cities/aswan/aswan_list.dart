@@ -6,9 +6,7 @@ import 'package:yamakan/screens/cities/aswan/aswan_grid_place.dart';
 import 'package:yamakan/widgets/place_page_widgets/place_item.dart';
 
 class AswanList extends StatelessWidget {
-  const AswanList({
-    super.key,
-  });
+  const AswanList({super.key});
 
   @override
   Widget build(BuildContext context) {

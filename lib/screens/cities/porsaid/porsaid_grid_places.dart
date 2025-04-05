@@ -4,9 +4,7 @@ import 'package:yamakan/data/cities/portsaid_places.dart';
 import 'package:yamakan/widgets/city_widgets/city_see_all_page.dart';
 
 class PortsaidGrid extends StatelessWidget {
-  const PortsaidGrid({
-    super.key,
-  });
+  const PortsaidGrid({super.key});
 
   @override
   Widget build(BuildContext context) {
