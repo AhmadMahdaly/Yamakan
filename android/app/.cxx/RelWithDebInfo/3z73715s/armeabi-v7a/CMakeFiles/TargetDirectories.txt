@@ -1,0 +1,2 @@
+D:/My PROJECTS/YaMakan_app/android/app/.cxx/RelWithDebInfo/3z73715s/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/My PROJECTS/YaMakan_app/android/app/.cxx/RelWithDebInfo/3z73715s/armeabi-v7a/CMakeFiles/rebuild_cache.dir
